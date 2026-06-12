@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlaceSnap — Privacy Policy</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0f0d;color:#e8f5ec;font-family:system-ui,-apple-system,sans-serif;padding:0 0 4rem;}
+nav{padding:16px 5%;border-bottom:1px solid #2a3d2d;display:flex;align-items:center;gap:10px;}
+.wordmark{font-size:18px;font-weight:700;color:#e8f5ec;text-decoration:none;display:flex;align-items:center;gap:7px;}
+.pin{color:#4ade80;}
+.wrap{max-width:720px;margin:0 auto;padding:3rem 1.5rem;}
+h1{font-size:28px;font-weight:700;margin-bottom:.5rem;}
+.date{font-size:13px;color:#8fb89a;margin-bottom:2.5rem;}
+h2{font-size:17px;font-weight:600;color:#4ade80;margin:2rem 0 .75rem;}
+p{font-size:15px;color:#8fb89a;line-height:1.8;margin-bottom:1rem;}
+ul{padding-left:1.5rem;margin-bottom:1rem;}
+li{font-size:15px;color:#8fb89a;line-height:1.8;margin-bottom:.4rem;}
+strong{color:#e8f5ec;}
+.highlight{background:#111a14;border:1px solid #2a3d2d;border-radius:10px;padding:16px 20px;margin:1.5rem 0;}
+.highlight p{margin:0;color:#8fb89a;}
+a{color:#4ade80;}
+footer{text-align:center;padding:2rem;font-size:12px;color:#4a6b52;border-top:1px solid #2a3d2d;margin-top:3rem;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="wordmark" href="index.html">📍 Place<span class="pin">Snap</span></a>
+</nav>
+
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: June 11, 2026</p>
+
+  <div class="highlight">
+    <p><strong>Short version:</strong> PlaceSnap does not collect, store or share any personal data. Your API key stays on your device. We never see it.</p>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>PlaceSnap is a Chrome browser extension developed and maintained by Tonina Trischitta, San Miguel de Allende, Guanajuato, Mexico. Contact: <a href="mailto:mesaclara.admin@gmail.com">mesaclara.admin@gmail.com</a></p>
+
+  <h2>2. What data PlaceSnap collects</h2>
+  <p><strong>PlaceSnap does not collect any personal data.</strong> Specifically:</p>
+  <ul>
+    <li>We do not collect your name, email address or any identifying information</li>
+    <li>We do not collect your browsing history or the URLs you visit</li>
+    <li>We do not collect the content of videos or posts you view</li>
+    <li>We do not use cookies or tracking of any kind</li>
+    <li>We do not have servers that receive or store your data</li>
+  </ul>
+
+  <h2>3. Your Anthropic API key</h2>
+  <p>PlaceSnap requires an Anthropic API key to function. This key is:</p>
+  <ul>
+    <li><strong>Stored locally</strong> on your device only, using Chrome's built-in storage API</li>
+    <li><strong>Never transmitted</strong> to PlaceSnap's servers (we have none)</li>
+    <li><strong>Sent only to Anthropic's API</strong> (api.anthropic.com) when you request a location extraction — this is the service you signed up for directly with Anthropic</li>
+  </ul>
+  <p>Your relationship with Anthropic regarding your API key and usage is governed by <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic's Privacy Policy</a>.</p>
+
+  <h2>4. How PlaceSnap works</h2>
+  <p>When you click the PlaceSnap button on a video or post, the extension:</p>
+  <ul>
+    <li>Reads the text content of the current page (video title, description, transcript if available) — this processing happens locally in your browser</li>
+    <li>Sends that text to Anthropic's API along with your API key to extract location names</li>
+    <li>Displays the results in the PlaceSnap panel — nothing is stored after you close the panel</li>
+  </ul>
+
+  <h2>5. Permissions we request and why</h2>
+  <ul>
+    <li><strong>storage</strong> — to save your API key locally on your device</li>
+    <li><strong>activeTab</strong> — to read the content of the current YouTube, Instagram or TikTok tab</li>
+    <li><strong>scripting</strong> — to inject the PlaceSnap button and panel into the page</li>
+    <li><strong>contextMenus</strong> — to add the PlaceSnap option to the right-click menu on Instagram and TikTok</li>
+    <li><strong>host permissions</strong> (youtube.com, instagram.com, tiktok.com, api.anthropic.com, nominatim.openstreetmap.org) — to run PlaceSnap on supported sites and call the APIs needed for location extraction and geocoding</li>
+  </ul>
+
+  <h2>6. Third-party services</h2>
+  <p>PlaceSnap interacts with the following third-party services:</p>
+  <ul>
+    <li><strong>Anthropic API</strong> (api.anthropic.com) — for AI-powered location extraction. See <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic's Privacy Policy</a></li>
+    <li><strong>OpenStreetMap Nominatim</strong> (nominatim.openstreetmap.org) — for geocoding location names to coordinates for KML export. See <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank">OSM Privacy Policy</a></li>
+    <li><strong>Google Maps</strong> — links open in Google Maps in your browser. See <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></li>
+  </ul>
+
+  <h2>7. Data retention</h2>
+  <p>PlaceSnap retains no data. The only item stored on your device is your Anthropic API key in Chrome local storage. You can delete it at any time by clicking the PlaceSnap icon in Chrome toolbar and clearing the key field, or by uninstalling the extension.</p>
+
+  <h2>8. Children's privacy</h2>
+  <p>PlaceSnap is not directed at children under 13 and does not knowingly collect any information from children.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>We may update this privacy policy from time to time. Changes will be posted at this URL with an updated date. Continued use of PlaceSnap after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>10. Contact</h2>
+  <p>For any questions about this privacy policy, please contact us at <a href="mailto:mesaclara.admin@gmail.com">mesaclara.admin@gmail.com</a></p>
+
+</div>
+
+<footer>
+  📍 PlaceSnap · <a href="index.html">Home</a> · Privacy Policy · © 2026
+</footer>
+
+</body>
+</html>
